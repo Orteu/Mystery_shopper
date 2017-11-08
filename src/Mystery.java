@@ -1,5 +1,3 @@
-// jivhg
-
 
 import java.util.*;
 import javax.swing.*;
@@ -25,6 +23,7 @@ public class Mystery {
        System.out.println("-----------------------------------------------------------------------");
        System.out.println("Tu sueldo de este mes es de un total de:");
        System.out.println((8*num_paradas)+(0.19*km)+" Euros");
+       JOptionPane.showMessageDialog(null,("Tu sueldo es de ")+((8*num_paradas)+(0.19*km)+" Euros"));
 
 
     }
