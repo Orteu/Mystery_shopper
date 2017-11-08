@@ -1,5 +1,6 @@
+import java.util.*;
+import javax.swing.*;
 
-import java.util.Scanner;
 
 public class Mystery {
 
@@ -12,13 +13,9 @@ public class Mystery {
         Scanner paradas = new Scanner(System.in);
         Scanner kilometros = new Scanner(System.in);
 
+        num_paradas = Integer.parseInt(JOptionPane.showInputDialog("Cuantas visitas has hecho?"));
 
-
-        System.out.println("Cuantas visitas has hecho?");
-        num_paradas = paradas.nextInt();
-
-        System.out.println("Cuantos Km has hecho fuera de tu localidad?");
-        km = kilometros.nextInt();
+        km = Integer.parseInt(JOptionPane.showInputDialog("Cuantos Km has hecho fuera de tu localidad?"));
 
        System.out.println("Has ganado "+8*num_paradas+" Euros en concepto de sueldo.");
        System.out.println("Has ganado "+0.19*km+" Euros en concepto de desplazamientos.");
